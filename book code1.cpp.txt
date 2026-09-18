@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+class Book
+{
+public:
+    int bookID;
+    string bookName;
+    string authorName;
+    float price;
+    int pages;
+
+    void input()
+    {
+        cout << "Enter Book ID: ";
+        cin >> bookID;
+
+        cin.ignore();
+        cout << "Enter Book Name: ";
+        getline(cin, bookName);
+
+        cout << "Enter Author Name: ";
+        getline(cin, authorName);
+
+        cout << "Enter Price: ";
+        cin >> price;
+
+        cout << "Enter Pages: ";
+        cin >> pages;
+    }
+
+    void display()
+    {
+        cout << "\n===== BOOK DETAILS =====\n";
+        cout << "Book ID     : " << bookID << endl;
+        cout << "Book Name   : " << bookName << endl;
+        cout << "Author Name : " << authorName << endl;
+        cout << "Price       : " << price << endl;
+        cout << "Pages       : " << pages << endl;
+    }
+};
+
+int main()
+{
+    Book b1;
+
+    b1.input();
+    b1.display();
+
+    return 0;
+}

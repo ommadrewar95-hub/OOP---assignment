@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class book
+{
+    public:
+     string book_id;
+     string book_name;
+     string book_author;
+
+    void display()
+    { cout<<"Book ID:"<<book_id<<endl;
+     cout<<"Book Name:"<<book_name<<endl;
+     cout<<"Author Name:"<<book_author<<endl;
+     cout<<"--------------------------------"<<endl;
+    }
+};
+ int main()
+{
+    book b1;
+    b1.book_id="0011";
+    b1.book_name="C++ book ";
+    b1.book_author=" john center";
+    b1.display();
+
+    book b2;
+    b2.book_id="0022";
+    b2.book_name="handouts of C++";
+    b2.book_author="siya Meyers";
+    b2.display();
+
+    book b3;
+    b3.book_id="0033";
+    b3.book_name=" Ai Course";
+    b3.book_author="Josh ojha";
+    b3.display();
+    return 0;
+
+}

@@ -8,7 +8,7 @@ public:
     string employeeDepartment;
     string employeeDesignation;
     float employeeSalary;
-    void display() 
+    void display()  
     {
         cout << "\n----------- OOP COMPANY -----------" << endl;
         cout << "Employee ID   : " << employeeID << endl;

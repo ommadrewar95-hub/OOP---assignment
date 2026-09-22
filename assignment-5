@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+public:
+    int Student_id;
+    string Student_name;
+    char Student_grade;
+    int Student_age;
+
+    Student(int Student_id, string Student_name, char Student_grade, int Student_age)
+    {
+        this->Student_id = Student_id;
+        this->Student_name = Student_name;
+        this->Student_grade = Student_grade;
+        this->Student_age = Student_age;
+    }
+
+    void display()
+    {
+        cout << "\nStudent ID: " << Student_id;
+        cout << "\nStudent Name: " << Student_name;
+        cout << "\nStudent Grade: " << Student_grade;
+        cout << "\nStudent Age: " << Student_age;
+        cout << "\n--------------------------";
+    }
+};
+
+int main()
+{
+    Student s1(20260001, "Om", 'A', 19);
+    Student s2(20260002, "Rohan", 'B', 20);
+
+    s1.display();
+    s2.display();
+
+    return 0;
+}

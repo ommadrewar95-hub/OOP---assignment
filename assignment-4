@@ -9,9 +9,9 @@ public:
     
     Book()
     {
-        id = "00";
-        name = "Unknown";
-        author = "Unknown";
+        id = "11";
+        name = "C++ course";
+        author = " roshan k. ";
     }
 
     
@@ -34,7 +34,7 @@ public:
 int main()
 {
     Book b1;
-    Book b2("101", "C++", "Bjarne");
+    Book b2("101", "rules of c++", " john R.");
 
     b1.display();
     b2.display();

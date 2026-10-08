@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class person
+{
+    public:
+    string name;
+   int age;
+    string contact;
+
+    void getperson()
+    {
+    cout<<"enter name :";
+    cin>>name;
+    cout<<"ENTER AGE :";
+    cin>>age;
+    cout<<"ENTER CONTACT :";
+    cin>>contact;
+}
+};
+class student : public person
+{
+    public:
+     int rollno;
+    string branch;
+
+    void getstudent()
+    {
+        cout<<"ENTER ROLLNO :";
+        cin>>rollno;
+        cout<<"ENTER bRANCH :";
+        cin>>branch;
+    }
+
+};
+   int main() 
+{
+ student s1;
+s1.getperson();
+s1.getstudent();
+return 0;
+}

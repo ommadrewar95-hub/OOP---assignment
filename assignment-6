@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+
+class employee
+
+{
+    public:
+    
+    string employeename;
+    int employeeID;
+    string employeebranch;
+    float employeesalray;
+    
+    
+    void show()
+    {
+    cout<<"----------EMPLOYEE INFORMATION ----------- :"<<endl;
+    cout<<"EMPLOYEE NAME :"<<employeename<<endl;
+    cout<<"EMPLOYEE ID :"<<employeeID<<endl;
+    cout<<"EMPLOYEE BRANCH :"<<employeebranch<<endl;
+    cout<<"EMPLOYEE SALARY :"<<employeesalray<<endl;
+    }
+     employee()
+     {
+     employeename="om";
+     employeeID =99;
+     employeebranch ="AIML";
+     employeesalray = 1111111.1;
+     
+     }
+     
+     
+     ~employee()
+     {
+         cout<<"Destructor is used :"<<endl;
+         
+     }
+     
+      };
+     int main()
+     
+     {
+       employee e1;
+       e1.show();
+       
+       return 0;
+     }
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
